@@ -65,5 +65,5 @@ def register(request):
 
 def auction(request):
     return render(request, "auctions/auction.html", {
-         "auction": Auction.objects.all()
+         "auctions": Auction.objects.all()
     })
